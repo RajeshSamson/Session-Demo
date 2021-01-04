@@ -10,4 +10,6 @@ public interface CustomerRepository extends CrudRepository<Customer, Long> {
 
     List<Customer> findByFirstNameAndLastName(String firstName, String lastName);
 
+    List<Customer> findByEmail(String email);
+
 }
